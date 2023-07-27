@@ -8,6 +8,9 @@ import router from './router'
 
 const app = createApp(App)
 
+const x = "helxysx"
+console.log(x);
+
 app.use(createPinia())
 app.use(router)
 
