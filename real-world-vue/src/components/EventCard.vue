@@ -8,13 +8,13 @@
 </template>
 
 <script setup lang="ts">
-import { type PropType } from 'vue'
-import { type EventItem } from '@/type'
+import type { EventItem } from '@/type'
+import type { PropType } from 'vue'
 const props = defineProps({
-    event: {
-        type: Object as PropType<EventItem>,
-        require: true
-    }
+  event: {
+    type: Object as PropType<EventItem>,
+    require: true
+  }
 })
 </script>
 
