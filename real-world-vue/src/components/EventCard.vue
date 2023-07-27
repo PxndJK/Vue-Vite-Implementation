@@ -8,18 +8,13 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { type PropType } from 'vue'
 import { type EventItem } from '@/type'
-const event = ref<EventItem>({
-  id: 5928101,
-  category: 'animal welfare',
-  title: 'CAt Adoption Day',
-  description: 'Find your new feline friend at this event',
-  location: 'Meow Town',
-  date: 'january 28, 2022',
-  time: '12:00',
-  petsAllowed: true,
-  organizer: 'Kat Laydee'
+const props = defineProps({
+    event: {
+        type: Object as PropType<EventItem>,
+        require: true
+    }
 })
 </script>
 
