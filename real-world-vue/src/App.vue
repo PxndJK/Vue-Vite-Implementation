@@ -6,9 +6,10 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/event2">Home2</RouterLink>
+      <RouterLink class="space" to="/">Home</RouterLink>
+      <RouterLink class="space" to="/about">About</RouterLink>
+      <RouterLink class="space" to="/event2">Home2</RouterLink>
+      <RouterLink class="space" to="/Student">Student</RouterLink>
     </nav>
   </header>
 
@@ -49,5 +50,9 @@ header {
 
 h4 {
   font-size: 20px;
+}
+
+.space{
+  margin-right: 15px;
 }
 </style>

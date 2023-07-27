@@ -22,9 +22,9 @@ EventService.getEvent().then((response: { data: EventItem[] }) =>{
   <main class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event"></EventCard>
   </main>
-  <mian class="events2">
+  <!-- <mian class="events2">
     <EventCard2 v-for="event in events" :key="event.id" :event="event"></EventCard2>
-  </mian>
+  </mian> -->
 </template>
 
 <style scoped>
